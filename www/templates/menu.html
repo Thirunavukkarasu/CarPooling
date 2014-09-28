@@ -1,0 +1,39 @@
+<ion-side-menus>
+
+  <ion-pane ion-side-menu-content>
+    <ion-nav-bar class="bar-assertive nav-title-slide-ios7">
+      <ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i> Back</ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <ion-side-menu side="left">
+    <header class="bar bar-header bar-assertive">
+      <h1 class="title">Options</h1>
+    </header>
+    <ion-content class="has-header">
+      <ion-list>
+	   <ion-item nav-clear menu-close href="#/app/home">
+	      <i class="icon ion-home"></i>
+          Home Page
+        </ion-item>
+        <ion-item nav-clear menu-close ng-click="login()">
+		  <i class="icon ion-person"></i>
+          Login
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/routes">
+		  <i class="icon ion-map"></i>
+          Routes
+        </ion-item>		
+        <ion-item nav-clear menu-close href="#/app/browse">
+		  <i class="fa fa-car"></i>
+          Forms of Carpooling
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/owners">
+		  <i class="fa fa-users"></i>
+          Owners & Vacancies
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
